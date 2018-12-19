@@ -4,6 +4,7 @@ import EventScreen from './screens/event'
 import EventListScreen from './screens/event-list'
 import PeopleListScreen from './screens/people-list'
 import EventMapScreen from './screens/event-map'
+import CameraScreen from './screens/camera'
 
 const ListsNavigator = createBottomTabNavigator({
     events: {
@@ -16,6 +17,9 @@ const ListsNavigator = createBottomTabNavigator({
 
 
 const StackNavigator = createStackNavigator({
+    camera: {
+        screen: CameraScreen
+    },
     eventMap: {
         screen: EventMapScreen
     },
